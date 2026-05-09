@@ -1,6 +1,0 @@
-# 强制所有PDF文件直接下载，禁止浏览器预览
-<FilesMatch "\.(pdf)$">
-    ForceType application/octet-stream
-    Header set Content-Disposition attachment
-    Header set X-Content-Type-Options nosniff
-</FilesMatch>
